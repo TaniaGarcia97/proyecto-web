@@ -1,0 +1,49 @@
+ALUMNO A --> Tania
+
+1. Configuración inicial
+
+Se crea el repositorio y se añade como colaborador a ALUMNO B
+
+git clone git@github.com:TaniaGarcia97/proyecto-web.git # Con esto clono el repositorio en mi ordenador local
+
+cd proyecto-web # Para acceder a la carpeta del repositorio
+
+echo "# proyecto-web" >> README.md # Para agregar el archivo README.md
+
+touch index.html # Para crear el archivo
+En este archivo creamos la estructura de html 
+
+git add . # Para agregar tanto el README
+
+git commit -m "Agregar estructura básica de index.html" # Agregamos un comentario para saber que mi usuario hizo el index.html
+
+git push origin main # Con este comando subo los cambios del local al repositorio a la rama main
+
+git commit -m "creada estructura básica de index.html" # Como modificamos la estructura volvemos a crear otro comentario
+
+git push origin main # Con este comando subo los cambios del local al repositorio a la rama main
+
+git branch header #Se crea la rama "header"
+git checkout header #Se cambia de la rama "main" a la "header"
+
+git add index.html # Añadimos el archivo index.html a la rama header
+
+git commit -m "creado el header" # Hacemos un comentario para saber que hemos creado la rama header 
+
+touch estilos.css #Para crear el archivo de estilos
+
+git add . #Para subir todos los cambios
+
+git commit -m "creado el css estilos.css" #Comentamos una vez creado el archivo css
+
+git push origin header #Para subir los cambios al header
+
+git checkout main #Cambiamos al repositorio "main"
+
+git pull origin header #Nos traemos los cambios del "header" al "main"
+
+git checkout header #Nos cambiamos a la rama "header"
+
+git pull origin main #Para traer los cambios al header desde main
+
+git push origin header 
