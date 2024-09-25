@@ -1,0 +1,50 @@
+ALUMNO B --> Alexis
+
+1. Configuración inicial:
+
+git clone git@github.com:TaniaGarcia97/proyecto-web.git
+cd proyecto-web/ #Clonación del repositorio previamente creado por ALUMNO A (Tania)
+git pull origin main #Para asegurarnos de que estén todos los ficheros
+
+2. Estructura básica del proyecto:
+
+--
+
+3. Creación de ramas para nuevas funcionalidades:
+
+git branch footer #Creamos la rama footer
+git checkout footer #Nos cambiamos a la rama footer
+git branch #Nos aseguramos de que estamos en la rama footer
+    * footer
+    main
+
+git add .
+git commit -m “Creación del footer”
+git push origin footer
+
+4. Desarollo simultáneo:
+
+#Desarrollo del fichero index.html y creación de estilos.css
+git add . #Añadimos todos los ficheros para subir en la rama footer
+git commit -m "Modificación de footer y creación de estilos"
+git push origin footer #Actualizamos la rama footer en Github
+
+5. Revisión y fusión de cambios, 6. Resolución de conflictos, 7. Actualización de la rama main
+
+git checkout main #Cambiamos a la rama main
+git pull origin footer #Traemos el contenido que presenta footer
+git push origin main #Obtenemos errores, ya que existen conflictos. Antes de continuar, debemos agregar una instrucción
+git config pull.rebase false #Instrucción necesaria para poder fusionar las ramas y posteriormente solucionar los conflictos, sin perder contenido
+git pull origin main
+git add .
+git commit -m "fusión"
+git push origin main #Debemos resolver los conflictos encontrados, y repetir el proceso para finalmente fusionar el contenido y publicarlo en Github
+git add .
+git commit -m "Resolución de conflictos"
+git push origin main #Finalmente se cuelga sin errores.
+
+#Hemos decidido hacer una fusión del contenido de main a header y footer, respectivamente.
+git checkout footer
+git pull origin main
+git push origin footer #El footer está actualizado, tal como está main
+
