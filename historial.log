@@ -105,4 +105,17 @@ git checkout header #Nos cambiamos a la rama "header"
 
 git pull origin main #Para traer los cambios al header desde main
 
-git push origin header 
+git checkout header
+git pull origin main
+git push origin header #El header está actualizado
+
+Además, también hemos unido el historial.log y realizada la fusión entre ambos
+
+touch historial.log
+git add historial.log 
+git commit -m "subido el historial alumno A"
+git push origin main
+git pull origin main 
+git add historial.log 
+git commit -m "completado el historial.log"
+git push origin main 
