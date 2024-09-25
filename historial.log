@@ -48,6 +48,7 @@ git checkout footer
 git pull origin main
 git push origin footer #El footer está actualizado, tal como está main
 
+
 ALUMNO A --> Tania
 
 1. Configuración inicial
@@ -59,6 +60,8 @@ git clone git@github.com:TaniaGarcia97/proyecto-web.git # Con esto clono el repo
 cd proyecto-web # Para acceder a la carpeta del repositorio
 
 echo "# proyecto-web" >> README.md # Para agregar el archivo README.md
+
+2. Estructura Básica del Proyecto
 
 touch index.html # Para crear el archivo
 En este archivo creamos la estructura de html 
@@ -73,8 +76,12 @@ git commit -m "creada estructura básica de index.html" # Como modificamos la es
 
 git push origin main # Con este comando subo los cambios del local al repositorio a la rama main
 
+3. Creación de ramas para nuevas funcionalidades
+
 git branch header #Se crea la rama "header"
 git checkout header #Se cambia de la rama "main" a la "header"
+
+4. Desarrollo simultáneo
 
 git add index.html # Añadimos el archivo index.html a la rama header
 
@@ -89,6 +96,8 @@ git commit -m "creado el css estilos.css" #Comentamos una vez creado el archivo 
 git push origin header #Para subir los cambios al header
 
 git checkout main #Cambiamos al repositorio "main"
+
+5. Revisión y Fusión de Cambios
 
 git pull origin header #Nos traemos los cambios del "header" al "main"
 
