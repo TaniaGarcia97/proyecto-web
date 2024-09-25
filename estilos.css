@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 footer {
    text-align:end;
    color: red;
+=======
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+nav {
+    display: flex;
+    gap: 30px;
+>>>>>>> e52e7062d8cd621ec7e0aa76b7479575ab2839f5
 }
